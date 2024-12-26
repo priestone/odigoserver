@@ -29,6 +29,7 @@ app.get("/api", async (req, res) => {
 
     // 받은 데이터를 그대로 클라이언트에게 응답
     res.send(data);
+    console.log(data);
   } catch (error) {
     console.error("Proxy Error:", error);
     res.status(500).json({ error: error.message });
